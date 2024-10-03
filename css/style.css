@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(73, 72, 72);
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    /* direction: rtl; */
+}
+.hidden{
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 120px;
+}
+select{
+    background-color: #0F0F0F;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.418);
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 5px 15px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    background-color: #E50914;
+    border: 0;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 7px 15px;
+    margin-top: 25px;
+}
+nav a:hover{
+    color: #fff;
+    background-color: #cc0a14;
+}
+nav img{
+    width: 200px;
+    filter: contrast(150%);
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/EG-en-20240909-TRIFECTA-perspective_7f808c3d-9f43-4019-badf-f042e7345ad0_large.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.3);
+    position: absolute;
+    z-index: -999;
+}
+.header .div-title{
+    max-width: 600px;
+    width: 100%;
+    height: 450px;
+    margin: 100px auto 0;
+    padding-bottom: 10px;
+}
+.header div h1{
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    font-size: 56px;
+}
+.header div p{
+    text-align: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.952);
+    font-size: 20px;
+    margin-top: 15px;
+}
+.div-title h3{
+    text-align: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.952);
+    font-size: 16px;
+    margin-top: 25px;
+}
+.div-title .input-button{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.div-title .input-button  input{
+    width: 370px;
+    background-color: #202121a1;
+    color: rgb(255, 255, 255);
+    color: #fff;
+    border: 1px solid rgb(148, 146, 146);
+    border-radius: 5px;
+}
+.div-title .input-button label{
+    color: #fff;
+}
+.div-title button{
+    background-color: #E50914;
+    color: white;
+    border: 1px solid #d60a14;
+    padding: 10px 18px ;
+    margin: 5px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.div-title button:hover{
+    background-color: #cc0a14;
+}
+.card{
+    background-color: black;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 80px 50px;
+    margin: 10px 0;
+}
+.card .div-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/***************second section********************/
+.videoSec {
+    color: white;
+    border-bottom: 8px solid #222;
+    background-color: black;
+    padding: 40px 180px;
+    text-align: left;
+    z-index: -3;
+}
+.videoSec h3 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.videoSec p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.videoSec .videoSecDiv {
+    position: relative;
+    width: 100%;
+}
+.videoSecDiv img {
+    width: 600px;
+}
+ .videoSecDiv video {
+    width: 480px;
+    position: absolute;
+    top: 70px;
+    left: 64px;
+    z-index: 1;
+}
+/*********fourth section************/
+.videoSecDiv2{
+    position: relative;
+    width: 100%;
+}
+
+.videoSec .videoSecDiv2 img {
+    width: 600px;
+}
+
+.videoSec .videoSecDiv2 video {
+    width: 350px;
+    z-index: -1;
+}
+/*  */
+.card div h1{
+    margin: 0 0 8px;
+    font-size: 45px;
+    color: white;
+    font-weight: 900;
+}
+.card div p{
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+.card div .img{
+    width: 450px;
+    height: 300px;
+}
+.Ask{
+    max-width: 100%;
+    background-color: black;
+}
+.accordion{
+    margin: 0;
+    width: 100%;
+}
+.Ask .accordion .accordion-header{
+    background-color: #2D2D2D;
+}
+.Ask .accordion .accordion-header:hover{
+    background-color: #414141;
+}
+.Ask .accordion .accordion-header button{
+    font-size: 24px;
+    padding: 24px;
+    color: #fff;
+}
+.Ask .accordion .accordion-body{
+    background-color: #2D2D2D;
+    border-top: 2px solid black;
+}
+.Ask .accordion .accordion-body .p2{
+    padding: 0 24px;
+}
+.Ask .accordion .accordion-body p{
+    font-size: 24px;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 0;
+    color: #fff;
+}
+.Ask .accordion-item{
+    color: black;
+}
+.Ask h2{
+    text-align: start;
+    font-size: 28px;
+    color: white;
+    padding: 20px;
+}
+.Ask .div-title{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background-color: black;
+}
+footer .link{
+    font-size: 14px;
+}
+footer a{
+    margin: 15px;
+    display: block;
+    color:  rgb(158, 154, 154);
+}
+footer a:hover{
+    color:  rgb(158, 154, 154);
+}
+footer p{
+    margin: 15px 15px 30px;
+    color: rgb(158, 154, 154);
+}
+footer select{
+    margin: 15px;
+}
+
+/* end Home page */
+/* start sign in */
+.sign-in{
+    max-width: 450px;
+    /* min-height: 707px; */
+    padding: 48px 68px 40px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+.sign-in h1{
+    font-size: 32px;
+    margin: 0 0 28px;
+    color: #fff;
+}
+.sign-in input{
+    background-color: #202121a1;
+    color: #fff;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(148, 146, 146);
+    border-radius: 5px;
+}
+.sign-in input:focus{
+    background-color: #202121a1;
+    border: 1px solid rgb(148, 146, 146);
+    box-shadow: none;
+    color: #fff;
+}
+.sign-in .btn{
+    background-color: #E50914;
+    color: #fff;
+}
+.sign-in label{
+    color: #fff;
+}
+.sign-in .forget-Password{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.sign-in .forget-Password:hover{
+    color: rgb(148, 146, 146);
+    text-decoration: underline;
+}
+.sign-in form #emailError,.sign-in form #passwordError{
+    padding: 10px 0;
+    font-size: 13px;
+    color: #e87c03;
+}
+.sign-in p{
+    color: rgb(182, 182, 182);
+    font-size: 16px;
+}
+.sign-in a{
+    text-decoration: none;
+    color: #fff;
+}
+.sign-in a:hover{
+    text-decoration: underline;
+}
+.sign-in .p{
+    font-size: 13px;
+}
+@media only screen and (max-width:1400px) {
+
+    /***second and fourth section******/
+    .videoSec .videoSecDiv img {
+        width: 500px;
+    }
+
+    .videoSec .videoSecDiv video {
+        width: 380px;
+    }
+    /***fourth section****/
+
+    .videoSec .videoSecDiv2 img {
+        width: 500px;
+    }
+
+    .videoSec .videoSecDiv2 video {
+        width: 320px;
+        position: absolute;
+        top: 50px;
+        left: 90px;
+        z-index: -1;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .card{
+        padding: 0px;
+    }
+    .card div h1{
+        text-align: center;
+        font-size: 35px;
+        padding-top: 30px;
+    }
+    .card div p{
+        text-align: center;
+        font-size: 20px;
+        margin: 40px 0;
+    }
+    .card div .img{
+        width: 100%;
+        height: 300px;
+    }
+    .videoSec .videoSecDiv img {
+        display: block;
+        justify-content: center;
+        margin: auto;
+    }
+    .videoSec .videoSecDiv video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    .videoSec .videoSecDiv2 img {
+        display: block;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .videoSec .videoSecDiv2 video {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media only screen and (max-width: 768px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px;
+    }
+    nav select{
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+     nav a{
+        margin-left: 5px;
+        font-size: 17px;
+        padding: 5px 15px;
+        margin-top: 15px;
+    }
+    nav img{
+        width: 150px;
+        filter: contrast(150%);
+    }
+    .header div h1{
+        font-size: 40px;
+        padding: 0 40px;
+    }
+    .header div h3{
+        font-size: 15px;
+    }
+    .div-title .input-button{
+        display: block;
+    }
+    .div-title .input-button div, .div-title input{
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .div-title label{
+        margin: 0 110px;
+    }
+    .Ask .accordion .accordion-header button{
+        font-size: 20px;
+    }
+    .Ask .accordion .accordion-body p{
+        font-size: 18px;
+    }
+    .Ask h2{
+        font-size: 25px;
+    }
+    footer .link a{
+        text-align: center;
+        margin: 15px auto;
+    }
+    footer .link p{
+        text-align: center;
+        margin: 15px auto;
+    }
+    footer select{
+        display: block;
+        justify-content: center;
+        margin: 15px auto;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .div-title label{
+        margin: 0 60px;
+    }
+    .videoSec .videoSecDiv img {
+        display: block;
+        justify-content: center;
+        margin: auto;
+        width: 380px;
+    }
+
+    .videoSec .videoSecDiv video {
+        width: 300px;
+    }
+
+    .videoSec .videoSecDiv video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    /*********fourth section************/
+
+
+    .videoSec .videoSecDiv2 img {
+        width: 300px;
+        display: block;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .videoSec .videoSecDiv2 video {
+        width: 190px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+/* ar */
+.Ar .div-title button{
+    max-width: 100%;
+    width: 165px;
+}
+.Ar .div-title button i{
+    margin-right: 5px;
+}
+.Ar .div-title .input-button  input{
+    direction: rtl;
+    padding: 15px;
+}
+.Ar .div-title .input-button label{
+    direction: rtl;
+
+}
+.Ar .div-title .input-button  input::placeholder{
+    color: #fff;
+}
+.Ar .card div h1{
+    font-size: 40px;
+    direction: rtl;
+    text-align: start;
+}
+.Ar .card div p{
+    direction: rtl;
+    text-align: start;
+}
+.Ar .videoSec{
+    direction: ltr;
+}
+.Ar .images{
+    direction: ltr;
+}
+.Ar .img{
+    direction: ltr;
+}
